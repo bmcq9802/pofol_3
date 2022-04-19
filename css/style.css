@@ -1,0 +1,151 @@
+    @charset "UTF-8";
+    @media screen and (min-width: 1025px) {}
+    
+    @media screen and (min-width: 740px)and (max-width: 1024px) {}
+    
+    @media screen and (min-width: 1px)and (max-width: 739px) {
+        .main_wrap {
+            background-color: rgb(234, 204, 204);
+        }
+        /* gnb */
+        .gnb {
+            height: 70px;
+            position: fixed;
+            z-index: 1000;
+            width: 100vw;
+            background: rgba(55, 49, 49, 0.5);
+        }
+        .gnb .gnb_menu {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 70px;
+            font-size: 18px;
+            color: #fff;
+        }
+        /* ///gnb/// */
+        /* page 공통 */
+        .section {
+            height: 600px;
+        }
+        /* /// 공통 /// */
+        /* page1 */
+        .page1 {
+            background: url(../images/page1/page1_bg.jpg) center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .page1 .page1_contents {
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+        .page1 .page1_contents>h1 {
+            color: #fff;
+            font-size: 32px;
+        }
+        .page1 .page1_btn {
+            width: 200px;
+            height: 50px;
+            border: #fff 1px dashed;
+            background-color: gray;
+        }
+        /* /// page1 /// */
+        /* page2 */
+        .page2 {
+            background: url(../images/page2/page2_bg.png);
+            position: relative;
+        }
+        .page2 .page2_upper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .page2 .page2_upper .page2_title {
+            height: 40px;
+            margin-top: -10px;
+            padding-top: 6px;
+            color: rgb(24, 24, 44);
+            font-size: 24px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        .page2 .page2_contents .page2_lottie {
+            width: 250px;
+            height: 170px;
+        }
+        .page2 .page2_contents .page2_slick {
+            position: absolute;
+            top: 50%;
+            margin-top: -24px;
+            right: 50%;
+            margin-right: -152px;
+            width: 300px;
+            height: 250px;
+            border: 5px solid rgb(24, 24, 44);
+            background-color: rgb(181, 150, 150);
+        }
+        .page2 .page2_contents .page2_slick .page2_link .pofol_link .link1 {
+            width: 300px;
+            height: 250px;
+            background: url(../images/codingdog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .page2 .page2_contents .page2_slick .page2_link .pofol_link .link2 {
+            width: 300px;
+            height: 250px;
+            background: url(../images/codingcat.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .page2 .page2_contents .page2_slick .page2_link .pofol_link .link3 {
+            width: 300px;
+            height: 250px;
+            background: url(../images/codingdog_2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* /// page2 /// */
+        /* page3 */
+        .page3 {
+            height: 800px;
+            background: url(../images/page3/page3_bg.jpg) center;
+            background-size: cover;
+        }
+        .page3 .page3_contents {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .page3 .page3_contents .interest {
+            height: 70px;
+            color: #fff;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .page3 .page3_contents .youtube {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* /// page3 /// */
+        /* footer */
+        .footer {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+        .footer .footer_text {
+            color: #fff;
+        }
+    }
