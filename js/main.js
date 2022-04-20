@@ -1,8 +1,9 @@
+// 슬릭
 $(document).ready(function() {
     $('.pofol_link').slick({
         infinite: true,
         slideToShow: 3,
-        speed: 100,
+        speed: 200,
         drggable: true,
         arrows: true,
         dots: true,
@@ -24,7 +25,7 @@ $(document).ready(function() {
 
                     slidesToShow: 1,
                     arrows: false,
-                    dots: false,
+                    dots: true,
                     autoplay: true,
                     autoplaySpeed: 4000,
                 }
@@ -32,3 +33,36 @@ $(document).ready(function() {
         ]
     });
 });
+// chart
+
+new Chart(
+    document.getElementById('myChart').getContext('2d'), {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    50,
+                    50
+                ],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)'
+                ]
+            }],
+            labels: [
+                "red",
+                "blue"
+            ]
+        },
+        options: {
+            rotation: 1 * Math.PI,
+            circumference: 1 * Math.PI,
+            responsive: true,
+            legend: false,
+            title: false,
+            animation: {
+                animateRotate: true
+            }
+        }
+    }
+);
