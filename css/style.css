@@ -140,6 +140,7 @@
             z-index: 10;
             cursor: pointer;
         }
+        /* ???중간화면 차트가 새로고침 한번 해줘야 나오는 이유??? */
         .page1 .btn_content {
             z-index: 10;
             display: none;
